@@ -1,0 +1,196 @@
+10:49:16 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -c -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc/Legacy" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/src/vl6180x" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/Utilities/STM32F1xx_Nucleo" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/inc" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/device" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/core" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/main.c: In function 'main':
+../src/main.c:96:13: warning: variable 'response' set but not used [-Wunused-but-set-variable]
+   96 |     uint8_t response=0;
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "rescapt.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/LinkerScript.ld" --specs=nosys.specs -Wl,-Map="rescapt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rescapt.elf
+ 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21600	     20	   2964	  24584	   6008	rescapt.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  rescapt.elf  > "rescapt.list"
+Finished building: rescapt.list
+ 
+arm-none-eabi-objcopy  -O binary  rescapt.elf  "rescapt.bin"
+Finished building: rescapt.bin
+ 
+10:49:30 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21600	     20	   2964	  24584	   6008	rescapt.elf
+Finished building: default.size.stdout
+ 
+10:56:35 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -c -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc/Legacy" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/src/vl6180x" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/Utilities/STM32F1xx_Nucleo" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/inc" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/device" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/core" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/main.c: In function 'main':
+../src/main.c:96:13: warning: variable 'response' set but not used [-Wunused-but-set-variable]
+   96 |     uint8_t response=0;
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "rescapt.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/LinkerScript.ld" --specs=nosys.specs -Wl,-Map="rescapt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rescapt.elf
+ 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21740	     20	   2964	  24724	   6094	rescapt.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  rescapt.elf  > "rescapt.list"
+Finished building: rescapt.list
+ 
+arm-none-eabi-objcopy  -O binary  rescapt.elf  "rescapt.bin"
+Finished building: rescapt.bin
+ 
+10:57:48 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -c -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc/Legacy" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/src/vl6180x" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/Utilities/STM32F1xx_Nucleo" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/inc" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/device" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/core" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/main.c: In function 'main':
+../src/main.c:96:13: warning: variable 'response' set but not used [-Wunused-but-set-variable]
+   96 |     uint8_t response=0;
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "rescapt.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/LinkerScript.ld" --specs=nosys.specs -Wl,-Map="rescapt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rescapt.elf
+ 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33584	    128	   2976	  36688	   8f50	rescapt.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  rescapt.elf  > "rescapt.list"
+Finished building: rescapt.list
+ 
+arm-none-eabi-objcopy  -O binary  rescapt.elf  "rescapt.bin"
+Finished building: rescapt.bin
+ 
+10:58:28 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -c -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc/Legacy" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/src/vl6180x" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/Utilities/STM32F1xx_Nucleo" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/inc" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/device" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/core" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/main.c: In function 'main':
+../src/main.c:96:13: warning: variable 'response' set but not used [-Wunused-but-set-variable]
+   96 |     uint8_t response=0;
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "rescapt.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/LinkerScript.ld" --specs=nosys.specs -Wl,-Map="rescapt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rescapt.elf
+ 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33584	    128	   2976	  36688	   8f50	rescapt.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  rescapt.elf  > "rescapt.list"
+Finished building: rescapt.list
+ 
+arm-none-eabi-objcopy  -O binary  rescapt.elf  "rescapt.bin"
+Finished building: rescapt.bin
+ 
+11:02:38 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -c -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc/Legacy" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/src/vl6180x" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/Utilities/STM32F1xx_Nucleo" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/inc" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/device" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/core" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/main.c: In function 'main':
+../src/main.c:96:13: warning: variable 'response' set but not used [-Wunused-but-set-variable]
+   96 |     uint8_t response=0;
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "rescapt.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/LinkerScript.ld" --specs=nosys.specs -Wl,-Map="rescapt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rescapt.elf
+ 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33592	    128	   2976	  36696	   8f58	rescapt.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  rescapt.elf  > "rescapt.list"
+Finished building: rescapt.list
+ 
+arm-none-eabi-objcopy  -O binary  rescapt.elf  "rescapt.bin"
+Finished building: rescapt.bin
+ 
+12:32:19 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -c -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc/Legacy" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/src/vl6180x" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/Utilities/STM32F1xx_Nucleo" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/inc" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/device" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/core" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/main.c: In function 'main':
+../src/main.c:96:13: warning: variable 'response' set but not used [-Wunused-but-set-variable]
+   96 |     uint8_t response=0;
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "rescapt.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/LinkerScript.ld" --specs=nosys.specs -Wl,-Map="rescapt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rescapt.elf
+ 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33592	    128	   2976	  36696	   8f58	rescapt.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  rescapt.elf  > "rescapt.list"
+Finished building: rescapt.list
+ 
+arm-none-eabi-objcopy  -O binary  rescapt.elf  "rescapt.bin"
+Finished building: rescapt.bin
+ 
+12:34:36 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -c -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc/Legacy" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/src/vl6180x" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/Utilities/STM32F1xx_Nucleo" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/inc" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/device" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/core" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/main.c: In function 'main':
+../src/main.c:96:13: warning: variable 'response' set but not used [-Wunused-but-set-variable]
+   96 |     uint8_t response=0;
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "rescapt.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/LinkerScript.ld" --specs=nosys.specs -Wl,-Map="rescapt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rescapt.elf
+ 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33584	    128	   2976	  36688	   8f50	rescapt.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  rescapt.elf  > "rescapt.list"
+Finished building: rescapt.list
+ 
+arm-none-eabi-objcopy  -O binary  rescapt.elf  "rescapt.bin"
+Finished building: rescapt.bin
+ 
+12:38:48 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -c -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc/Legacy" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/src/vl6180x" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/Utilities/STM32F1xx_Nucleo" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/inc" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/device" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/core" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/main.c: In function 'main':
+../src/main.c:96:13: warning: variable 'response' set but not used [-Wunused-but-set-variable]
+   96 |     uint8_t response=0;
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "rescapt.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/LinkerScript.ld" --specs=nosys.specs -Wl,-Map="rescapt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rescapt.elf
+ 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33576	    128	   2976	  36680	   8f48	rescapt.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  rescapt.elf  > "rescapt.list"
+Finished building: rescapt.list
+ 
+arm-none-eabi-objcopy  -O binary  rescapt.elf  "rescapt.bin"
+Finished building: rescapt.bin
+ 
+12:40:32 **** Incremental Build of configuration Debug for project rescapt ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -c -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc/Legacy" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/src/vl6180x" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/Utilities/STM32F1xx_Nucleo" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/inc" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/device" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/CMSIS/core" -I"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/main.c: In function 'main':
+../src/main.c:96:13: warning: variable 'response' set but not used [-Wunused-but-set-variable]
+   96 |     uint8_t response=0;
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "rescapt.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/e2022/g2bastos/Documents/S7/CRS/crs-bus-can/STM32/rescapt/LinkerScript.ld" --specs=nosys.specs -Wl,-Map="rescapt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rescapt.elf
+ 
+arm-none-eabi-size   rescapt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33584	    128	   2976	  36688	   8f50	rescapt.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  rescapt.elf  > "rescapt.list"
+Finished building: rescapt.list
+ 
+arm-none-eabi-objcopy  -O binary  rescapt.elf  "rescapt.bin"
+Finished building: rescapt.bin
+ 
